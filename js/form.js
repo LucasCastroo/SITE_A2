@@ -30,7 +30,7 @@ function mascaraTelefone(input){
 //listar cidades para o estado selecionado
 state.addEventListener("change", carregarCidades);
 let req = new XMLHttpRequest();
-req.open("GET", "/assets/cidades.json", false);
+req.open("GET", "./assets/cidades.json", false);
 req.send();
 let citiesJson = JSON.parse(req.responseText).estados;
 function carregarCidades(e){
