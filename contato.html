@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formatacoes.css">
+    <title>Contato</title>
+</head>
+<body>
+    <form class="form" autocomplete="off">
+        <div class="form-item">
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div class="form-item">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form-item">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" maxlength="15" name="telefone" placeholder="(__) _____-____" onkeypress="mascaraTelefone(this)">
+        </div>
+        <div class="form-item">
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option hidden disabled selected value> -- selecione um estado -- </option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+        <div class="form-item" id="cidade-select" hidden><!--isso aparece e é preenchido automaticamente quando selecionado um estado-->
+            <label for="cidade">Cidade</label>
+            <select name="cidade" id="cidade">
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade">
+        </div>
+        <div class="form-item">
+            <label for="sexo">Sexo*</label> <!--eita bixo-->
+            <input type="radio" name="sexo" id="masc" value="Masculino">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="Feminino">
+            <label for="fem">Feminino</label>
+        </div>
+        <div class="form-item">
+            <label for="motivo">Motivo do Contato*</label>
+            <select name="motivo" id="motivo">
+                <option hidden disabled selected value> -- selecione um motivo -- </option>
+                <option value="duvida">Dúvida</option>
+                <option value="elogio">Elogio</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <label for="mensagem">Mensagem*</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+    <script src="js/form.js"></script>
+</body>
+</html>
