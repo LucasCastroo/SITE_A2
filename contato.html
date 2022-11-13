@@ -11,11 +11,11 @@
     <form class="form" autocomplete="off">
         <div class="form-item">
             <label for="nome">Nome*</label>
-            <input type="text" id="nome" name="nome">
+            <input type="text" id="nome" name="nome" required>
         </div>
         <div class="form-item">
             <label for="email">E-mail*</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
         </div>
         <div class="form-item">
             <label for="telefone">Telefone</label>
@@ -65,14 +65,14 @@
         </div>
         <div class="form-item">
             <label for="sexo">Sexo*</label> <!--eita bixo-->
-            <input type="radio" name="sexo" id="masc" value="Masculino">
+            <input type="radio" name="sexo" id="masc" value="Masculino" required>
             <label for="masc">Masculino</label>
             <input type="radio" name="sexo" id="fem" value="Feminino">
             <label for="fem">Feminino</label>
         </div>
         <div class="form-item">
             <label for="motivo">Motivo do Contato*</label>
-            <select name="motivo" id="motivo">
+            <select name="motivo" id="motivo" required>
                 <option hidden disabled selected value> -- selecione um motivo -- </option>
                 <option value="duvida">Dúvida</option>
                 <option value="elogio">Elogio</option>
@@ -81,7 +81,10 @@
         </div>
         <div class="form-item">
             <label for="mensagem">Mensagem*</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="form-item">
+            <input type="submit" value="Enviar">
         </div>
     </form>
     <script src="js/form.js"></script>

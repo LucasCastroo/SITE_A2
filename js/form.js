@@ -1,17 +1,35 @@
-$(".form").addEventListener("change", validar);
-
-let name = $("#nome");
+let nome = $("#nome");
 let email = $("#email");
-let input = $("#telefone");
+let telephone = $("#telefone");
 let state = $("#estado");
 let city = $("#cidade");
-let citySelect = $("#cidade-select")
+let citySelect = $("#cidade-select");
 let age = $("#idade");
-let reason = $("motivo")
-let message = $("message")
+let reason = $("#motivo");
+let message = $("#mensagem");
+let masc = $("#masc");
+let fem = $("#fem");
 
+$(".form").addEventListener("change", validar);
+$(".form").addEventListener("submit", function(){
+    [nome, email, message, masc, fem].forEach(e => validar(e))
+});
 function validar(e) {
-    
+    e = e.target;
+    if(e.required){
+        e.style.removeProperty("border");
+        $("#" + e.id +  "-required")?.remove();
+        if(!e.checkValidity()){
+            e.style.border = "2px solid red";
+            let p = document.createElement("p");
+            p.id = e.id + "-required";
+            p.style.display = "inline";
+            p.style.color = "red";
+            p.style.fontSize = "small";
+            p.innerText = " Inválido";
+            e.after(p);
+        }
+    }
 }
 
 
