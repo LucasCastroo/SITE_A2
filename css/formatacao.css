@@ -63,6 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     color: var(--texto1);
+    height: 100vh;
 }
 
 
