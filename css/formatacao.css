@@ -130,11 +130,6 @@ main {
     flex: auto;
     background-color: var(--fundo);
 }
-
-
-
-
-
 .rodape {
     height: 75px;
     background-color: var(--cor1);
@@ -163,4 +158,11 @@ a:visited {
 .info-dev{
     color: var(--texto2);
     text-align: justify;
+}
+.info-estrutura{
+    color: var(--texto2);
+    text-align: justify;
+}
+#estrutura{
+    font-size: 35px;
 }
