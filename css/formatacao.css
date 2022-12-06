@@ -111,8 +111,8 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .link-nav:hover {
@@ -129,6 +129,7 @@ body {
 main {
     flex: auto;
     background-color: var(--fundo);
+    
 }
 .rodape {
     height: 75px;
@@ -138,7 +139,7 @@ main {
     align-items: center;
     row-gap: 1px;
     padding-top: 20px;
-    padding-bottom: 15px;
+    padding-bottom:30px;
 }
 
 .logo-unitins {
@@ -167,6 +168,10 @@ a:visited {
 .info-sobre{
     color: var(--texto2);
     text-align: justify;
+}
+.info-rodape{
+    font-weight: bold;
+    margin: 5px;
 }
 #estrutura{
     font-size: 35px;
