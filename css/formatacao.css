@@ -250,7 +250,6 @@ form{
     color: var(--fundo);
     font-size: 20px;
 }
-
 .input{
     width: 100%;
     border: 0;
@@ -258,6 +257,22 @@ form{
     background-color: var(--cor1);
     padding: 5px;
     font-size: 13px;
+    outline: none;
+    color: var(--fundo);
+}
+
+.botao {
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.botao:hover{
+    background-color: var(--cor1);
 }
 
 .botao {
