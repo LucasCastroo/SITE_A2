@@ -54,7 +54,7 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
     --texto1: #dad7cd;
     --texto2: #000000;
-    --fundo: #ffffff;
+    --branco: #ffffff;
     --cor1: #344e41;
     --cor2: #3a5a40;
 }
@@ -132,10 +132,10 @@ body {
 
 main {
     flex: auto;
-    background-color: var(--fundo);
+    background-color: var(--branco);
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
 }
 
 .rodape {
@@ -147,6 +147,7 @@ main {
     row-gap: 1px;
     padding-top: 20px;
     padding-bottom:30px;
+    margin-top: 20px;
 }
 
 .logo-unitins {
@@ -195,24 +196,21 @@ a:visited {
 #estrutura{
     font-size: 35px;
 }
-#container{
-    max-width: 1600px;
-    margin: 0 auto;
 
-}
-#container h2{
+form h2{
     margin: 0;
 }
 form{
     background-color: var(--cor1);
     max-width: 500px;
-    height: 450px;
     padding: 40px;
     border-radius: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 .form-item{
     position: relative;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 #entre-contato{
     text-align: center;
@@ -223,10 +221,23 @@ form{
 .input{
     width: 100%;
     border: 0;
-    border-bottom: 2px solid var(--fundo);
+    border-bottom: 2px solid var(--branco);
     background-color: var(--cor1);
     padding: 5px;
     font-size: 13px;
     outline: none;
-    color: var(--fundo);
+    color: var(--branco);
+}
+.btn{
+    width: 100%;
+    text-align: center;
+}
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--branco);
+    color: var(--texto2);
+    cursor: pointer;
+    font-weight: bold;
 }
