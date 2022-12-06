@@ -11,9 +11,7 @@ let masc = $("#masc");
 let fem = $("#fem");
 
 $(".form").addEventListener("change", validar);
-$(".form").addEventListener("submit", function(){
-    [nome, email, message, masc, fem].forEach(e => validar(e))
-});
+$(".form").addEventListener("submit", validar);
 function validar(e) {
     e = e.target;
     if(e.required){
