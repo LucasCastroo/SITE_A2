@@ -195,3 +195,37 @@ a:visited {
 #estrutura{
     font-size: 35px;
 }
+#container{
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+#container h2{
+    margin: 0;
+}
+form{
+    background-color: var(--cor1);
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+}
+.form-item{
+    position: relative;
+    margin: 20px 0;
+}
+#entre-contato{
+    text-align: center;
+    margin: 0;
+    color: var(--fundo);
+    font-size: 20px;
+}
+
+.input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--fundo);
+    background-color: var(--cor1);
+    padding: 5px;
+    font-size: 13px;
+}
