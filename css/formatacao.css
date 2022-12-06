@@ -164,6 +164,10 @@ a:visited {
     color: var(--texto2);
     text-align: justify;
 }
+.info-sobre{
+    color: var(--texto2);
+    text-align: justify;
+}
 #estrutura{
     font-size: 35px;
 }
