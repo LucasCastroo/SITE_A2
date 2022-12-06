@@ -138,11 +138,12 @@ main {
     align-items: center;
     row-gap: 1px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .logo-unitins {
     filter: brightness(1.5);
+    width: 120px;
 }
 
 
