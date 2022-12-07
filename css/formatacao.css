@@ -285,11 +285,7 @@ form{
 }
 
 .botao:hover{
-    background-color: var(--cor1);
-}
-
-.botao:visited{
-    background-color: var(--branco) !important;
+    background-color: var(--texto1);
 }
 
 .conteudo {
