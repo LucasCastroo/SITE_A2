@@ -59,11 +59,15 @@
 }
 
 .item-carrossel figcaption {
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
     font-size: xx-large;
     color: white;
-    text-shadow: 2px 2px 20px black;
-    filter: invert() sepia();
+}
+
+.figure-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 10px;
 }

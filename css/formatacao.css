@@ -67,6 +67,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
+    justify-content: space-around;
 }
 .subtitulo {
     font-size: 1.5em;
@@ -148,6 +149,8 @@ main {
     padding-top: 20px;
     padding-bottom:30px;
     margin-top: 20px;
+    margin-top: calc(auto + 20px);
+    width: 100%;
 }
 
 .logo-unitins {
@@ -159,16 +162,49 @@ main {
 .cards {
     display: flex;
     flex-direction: row;
+    align-self: center;
+    justify-content: space-around;
+    column-gap: 20px;
 }
 
 .card {
+    flex: auto;
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 300px;
+    width: 300px;
     background-color: var(--cor2);
-    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.3);
+    padding: 20px;
+    row-gap: 22px;
 }
+.card h3 {
+    text-align: center;
+}
+
+.card p {
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.card p::first-letter {
+    padding-left: 20px;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor1);
+    margin: -20px;
+    width: calc(100% + 20px + 20px);
+    height: calc(100% + 20px + 20px);
+    padding-bottom: 5px;
+}
+
 
 a {
     color: var(--texto1);
@@ -197,7 +233,6 @@ a:visited {
 #estrutura{
     font-size: 35px;
 }
-
 form h2{
     margin: 0;
 }
@@ -263,4 +298,88 @@ form input[type=submit]{
     margin-top: 20px;
     margin-left: 20px;
     font-size: 20px;
+}
+
+.botao {
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.botao:hover{
+    background-color: var(--cor1);
+}
+
+.botao {
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.botao:hover{
+    background-color: var(--cor1);
+}
+
+.conteudo {
+    padding-right: 20px;
+    font-size: large;
+    min-height: calc(100vh - 75px - 75px - 100px - 50px);
+}
+
+.conteudo img {
+    float: left;
+    padding: 20px;
+}
+.conteudo p::first-letter {
+    padding-left: 20px;
+}
+
+.botao {
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.botao:hover{
+    background-color: var(--cor1);
+}
+
+.botao {
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.botao:hover{
+    background-color: var(--cor1);
+}
+
+.conteudo {
+    padding-right: 20px;
+    font-size: large;
+    min-height: calc(100vh - 75px - 75px - 100px - 50px);
+}
+
+.conteudo img {
+    float: left;
+    padding: 20px;
+}
+.conteudo p::first-letter {
+    padding-left: 20px;
 }
