@@ -216,7 +216,7 @@ a:visited:not(.botao) {
 .info-estrutura{
     color: var(--texto2);
     text-align: justify;
-    
+    padding-top: 70px;
 }
 .info-sobre{
     color: var(--texto2);
@@ -240,6 +240,7 @@ form{
     max-width: 1600px;
     margin: 0 auto;
 }
+
 .form-item{
     position: relative;
     margin: 25px 0;
@@ -319,5 +320,8 @@ form{
 
 .dev p {
     color: var(--texto1);
-    text-align: justify;
+}
+
+.dev strong {
+    font-weight: bolder;
 }

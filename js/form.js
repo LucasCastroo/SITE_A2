@@ -12,6 +12,7 @@ let fem = $("#fem");
 
 $(".form").addEventListener("change", validar);
 $(".form").addEventListener("submit", validar);
+
 function validar(e) {
     e = e.target;
     if(e.required){
