@@ -54,7 +54,7 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
     --texto1: #dad7cd;
     --texto2: #000000;
-    --branco: #ffffff;
+    --fundo: #ffffff;
     --cor1: #344e41;
     --cor2: #3a5a40;
 }
@@ -68,6 +68,7 @@ body {
     padding: 0;
     margin: 0;
     justify-content: space-around;
+    background-color: var(--fundo);
 }
 .subtitulo {
     font-size: 1.5em;
@@ -110,6 +111,9 @@ body {
     display: flex;
     flex-direction: row;
 }
+.navbar ul img {
+    padding-left: 20px;
+}
 
 .link-nav {
     align-self: center;
@@ -133,7 +137,7 @@ body {
 
 main {
     flex: auto;
-    background-color: var(--branco);
+    background-color: var(--fundo);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,7 +152,7 @@ main {
     align-items: center;
     row-gap: 1px;
     padding-top: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
     margin-top: 40px;
     width: 100%;
 }
@@ -254,12 +258,12 @@ form{
 .input{
     width: 100%;
     border: 0;
-    border-bottom: 2px solid var(--branco);
+    border-bottom: 2px solid var(--fundo);
     background-color: var(--cor1);
     padding: 5px;
     font-size: 13px;
     outline: none;
-    color: var(--branco);
+    color: var(--fundo);
 }
 
 .imagem-estrutura{
@@ -273,7 +277,7 @@ form{
     padding: 10px 40px;
     border: 0;
     border-radius: 10px;
-    background-color: var(--branco);
+    background-color: var(--fundo);
     color: var(--texto2);
     cursor: pointer;
     font-weight: bold;
