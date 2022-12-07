@@ -284,22 +284,6 @@ form input[type=submit]{
     width: 960px;
     margin: auto;
 }
-.conteudo{
-    display: table;
-}
-.imagem{
-    display: table-cell;
-    float: left;
-}
-.texto{
-    display: table-cell;
-    float: left;
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 20px;
-}
-
 .botao {
     text-decoration: none;
     border: none;
