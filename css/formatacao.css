@@ -141,15 +141,15 @@ main {
 }
 
 .rodape {
-    height: 75px;
+    height: 40px;
     background-color: var(--cor1);
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 1px;
     padding-top: 20px;
-    padding-bottom:10px;
-    margin-top: 20px;
+    padding-bottom: 25px;
+    margin-top: 40px;
     width: 100%;
 }
 
