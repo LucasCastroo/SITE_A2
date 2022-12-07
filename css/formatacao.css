@@ -272,22 +272,6 @@ form{
     width: 960px;
     margin: auto;
 }
-.conteudo{
-    display: table;
-}
-.imagem{
-    display: table-cell;
-    float: left;
-}
-.texto{
-    display: table-cell;
-    float: left;
-    width: 300px;
-    margin-top: 20px;
-    margin-left: 20px;
-    font-size: 20px;
-}
-
 .botao {
     padding: 10px 40px;
     border: 0;
