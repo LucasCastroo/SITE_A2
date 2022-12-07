@@ -213,10 +213,6 @@ a {
 a:visited:not(.botao) {
     color: var(--texto1);
 }
-.info-dev{
-    color: var(--texto2);
-    text-align: justify;
-}
 .info-estrutura{
     color: var(--texto2);
     text-align: justify;
@@ -300,4 +296,27 @@ form{
 }
 .conteudo p::first-letter {
     padding-left: 20px;
+}
+
+.container-dev{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dev{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    background-color: var(--cor2);
+    padding: 20px;
+}
+
+.dev img{
+    object-fit: cover;
+}
+
+.dev p {
+    color: var(--texto1);
+    text-align: justify;
 }
