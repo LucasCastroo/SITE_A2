@@ -44,27 +44,44 @@ function mascaraTelefone(input){
 
 
 //listar cidades para o estado selecionado
-state.addEventListener("change", carregarCidades);
+
+//baixa o arquivo json
+
 let req = new XMLHttpRequest();
 req.open("GET", "./assets/cidades.json", false);
 req.send();
-let citiesJson = JSON.parse(req.responseText).estados;
+
+let citiesJson = JSON.parse(req.responseText).estados; //carrega a estrutura do json nessa variavel
+
+//adiciona um gatilho pra que quando selecionado o estado a função carregarCidades seja chamada
+state.addEventListener("change", carregarCidades);
+
+
 function carregarCidades(e){
-    city.innerHTML = "";
+    city.innerHTML = ""; //limpa o select de cidade
+
+    //cria um option fantasma com um texto orientando o usuario
     let defaultOpt = document.createElement("option");
     defaultOpt.hidden = true;
     defaultOpt.disabled = true
     defaultOpt.selected = true;
     defaultOpt.innerText = " -- selecione uma cidade -- ";
     city.append(defaultOpt);
-    let stateCode = e.target.value;
+
+
+    let stateCode = e.target.value; //obtem o valor da option selecionada no select de estado
+    //procura no json as cidades que tem o estado igual ao que selecionado
     let cities = citiesJson.find(s => s.sigla == stateCode).cidades
+
+    //pra cada cidade cria um option o coloca ele no select de cidade
     cities.forEach(c => {
         let opt = document.createElement("option");
         opt.value = c.toLowerCase();
         opt.innerText = c;
         city.append(opt);
     });
+
+    //desesconde o select de cidade
     citySelect.hidden = false;
 }
 
