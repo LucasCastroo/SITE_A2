@@ -137,6 +137,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: calc(100vh - 75px - 20px - 50px - 20px - 20px);
 }
 
 .rodape {
@@ -147,9 +148,8 @@ main {
     align-items: center;
     row-gap: 1px;
     padding-top: 20px;
-    padding-bottom:30px;
+    padding-bottom:10px;
     margin-top: 20px;
-    margin-top: calc(auto + 20px);
     width: 100%;
 }
 
@@ -300,13 +300,13 @@ form{
 
 .container-dev{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .dev{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 200px;
     align-items: center;
     background-color: var(--cor2);
     padding: 20px;
@@ -314,6 +314,7 @@ form{
 
 .dev img{
     object-fit: cover;
+    padding: 10px;
 }
 
 .dev p {
