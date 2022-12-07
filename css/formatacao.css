@@ -210,7 +210,7 @@ a {
     color: var(--texto1);
 }
 
-a:visited {
+a:visited:not(.botao) {
     color: var(--texto1);
 }
 .info-dev{
@@ -264,19 +264,7 @@ form{
     outline: none;
     color: var(--branco);
 }
-.btn{
-    width: 100%;
-    text-align: center;
-}
-form input[type=submit]{
-    padding: 10px 40px;
-    border: 0;
-    border-radius: 10px;
-    background-color: var(--branco);
-    color: var(--texto2);
-    cursor: pointer;
-    font-weight: bold;
-}
+
 .imagem-estrutura{
     border: solid 3px var(--texto2);
 }
@@ -301,73 +289,23 @@ form input[type=submit]{
 }
 
 .botao {
-    text-decoration: none;
-    border: none;
-    text-align: center;
-    background-color: var(--cor2);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--branco);
+    color: var(--texto2);
+    cursor: pointer;
+    font-weight: bold;
     width: fit-content;
+    text-decoration: none;
 }
 
 .botao:hover{
     background-color: var(--cor1);
 }
 
-.botao {
-    text-decoration: none;
-    border: none;
-    text-align: center;
-    background-color: var(--cor2);
-    padding: 10px;
-    border-radius: 5px;
-    width: fit-content;
-}
-
-.botao:hover{
-    background-color: var(--cor1);
-}
-
-.conteudo {
-    padding-right: 20px;
-    font-size: large;
-    min-height: calc(100vh - 75px - 75px - 100px - 50px);
-}
-
-.conteudo img {
-    float: left;
-    padding: 20px;
-}
-.conteudo p::first-letter {
-    padding-left: 20px;
-}
-
-.botao {
-    text-decoration: none;
-    border: none;
-    text-align: center;
-    background-color: var(--cor2);
-    padding: 10px;
-    border-radius: 5px;
-    width: fit-content;
-}
-
-.botao:hover{
-    background-color: var(--cor1);
-}
-
-.botao {
-    text-decoration: none;
-    border: none;
-    text-align: center;
-    background-color: var(--cor2);
-    padding: 10px;
-    border-radius: 5px;
-    width: fit-content;
-}
-
-.botao:hover{
-    background-color: var(--cor1);
+.botao:visited{
+    background-color: var(--branco) !important;
 }
 
 .conteudo {
